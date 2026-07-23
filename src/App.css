@@ -1,0 +1,194 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f4f7ff;
+}
+
+.app-bg{
+    min-height:100vh;
+    padding:10px 0;
+    background:linear-gradient(135deg,#141E30,#243B55);
+}
+
+.main-title{
+    color:#fff;
+    font-weight:700;
+    font-size:42px;
+}
+
+.subtitle{
+    color:#d7e3ff;
+}
+
+.custom-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+/* Header */
+
+.card-header-custom{
+    background:linear-gradient(90deg,#FF512F,#DD2476);
+    color:white;
+    padding:18px 25px;
+}
+
+.card-header-custom h3{
+    margin:0;
+    font-weight:600;
+}
+
+/* Fixed Table */
+
+.table-container{
+    height:450px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+.table-container::-webkit-scrollbar{
+    width:8px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background:#ff512f;
+    border-radius:20px;
+}
+
+.table-container::-webkit-scrollbar-track{
+    background:#ececec;
+}
+
+/* Sticky Header */
+
+.custom-table thead{
+    position:sticky;
+    top:0;
+    background:#243B55;
+    color:white;
+    z-index:100;
+}
+
+.custom-table th{
+    padding:15px;
+    border:none;
+}
+
+.custom-table td{
+    padding:15px;
+    vertical-align:middle;
+}
+
+.custom-table tbody tr{
+    transition:.3s;
+}
+
+.custom-table tbody tr:nth-child(even){
+    background:#f8f9ff;
+}
+
+.custom-table tbody tr:hover{
+    background:#ffe9df;
+}
+
+/* Avatar */
+
+.avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#FF512F,#F09819);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:bold;
+}
+
+.user-name{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* Form */
+
+.form-card{
+    padding:30px;
+    background:linear-gradient(135deg,#ffffff,#f5f9ff);
+}
+
+.custom-input{
+    height:55px;
+    border-radius:12px;
+    border:2px solid #ddd;
+    transition:.3s;
+}
+
+.custom-input:focus{
+    border-color:#ff512f;
+    box-shadow:0 0 15px rgba(255,81,47,.3);
+}
+
+/* Button */
+
+.add-btn{
+    height:55px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,114,255,.35);
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.table-container{
+    height:350px;
+}
+
+.main-title{
+    font-size:32px;
+}
+
+.form-card{
+    margin-top:25px;
+}
+
+}
+
+@media(max-width:576px){
+
+.main-title{
+    font-size:26px;
+}
+
+.table-container{
+    height:300px;
+}
+
+.custom-table{
+    font-size:14px;
+}
+
+.custom-input{
+    height:48px;
+}
+
+.add-btn{
+    height:48px;
+}
+
+}
